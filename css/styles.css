@@ -1,0 +1,141 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: white;
+
+}
+
+:root{
+    --color-fondo: rgb(2, 2, 36);
+    --color-menu: rgb(51, 51, 63);
+    --verde-titulo: rgb(68, 190, 180) ;
+    --circulo-colorfond:rgb(56, 56, 71);
+}
+
+body{
+    padding: 1.5rem;
+    background-color: var(--color-fondo);
+
+}
+
+main{
+    display: flex;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    justify-content: space-around;
+    flex-direction: row;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/106/106798.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 20rem;
+
+   
+}
+
+label > img{
+   
+   
+   filter:brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(3142%) hue-rotate(243deg) brightness(103%) contrast(110%);
+}
+
+input#menu-hamburguesa{
+    display: none;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 40px;
+    
+}
+.menuh{
+    
+    position: absolute;   
+    right: 0;
+}
+
+.ul-nav{
+    width: 100%;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content:flex-start;
+    gap: 2rem;
+    height: calc(100vh - 80px);
+    background-color: var(--color-menu);
+    margin-top: 40px;
+    z-index: 3;
+    padding: 2rem;
+
+   
+}
+
+ul.ul-nav > li  {
+    list-style: none;
+}
+
+input#menu-hamburguesa:checked ~ ul{
+    
+    display: flex;
+    
+}
+
+h2{
+    position: relative;
+    left: 0;
+   display: block;
+}
+
+h1{
+    border-bottom: 1px;
+    border-color: white;
+    border-bottom-style: solid;
+    display:inline;
+    color: var(--verde-titulo);
+
+}
+h4{
+    display: block;
+    margin-top: 1.5rem;
+}
+
+main > .contenedor-main.uno{
+    width: 8rem;
+    
+
+}
+
+
+.contenedor-maindos{
+    width:8rem;
+    height: 8rem;
+
+    background-color: var(--circulo-colorfond);
+    border-radius: 50%;
+    z-index: -1;
+    position: relative               ;
+}                         cc                                                 
+
+h3{
+    order: 3;
+}
+
+div.iconmain{
+    display: flex;
+    flex-direction: row;
+}
+
+div.iconmain > div{
+background-color: white;
+border-radius: 50%;
+height:2.3rem;
+width: 2.3rem;
+margin-right: .7rem;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 0.5rem;
