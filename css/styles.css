@@ -7,9 +7,9 @@
 }
 
 :root{
-    --color-fondo: rgb(2, 2, 36);
-    --color-menu: rgb(51, 51, 63);
-    --verde-titulo: rgb(68, 190, 180) ;
+    --color-fondo: #242635;
+    --color-menu: #d1ceca;
+    --verde-titulo: #34B0BE ;
     --circulo-colorfond:rgb(56, 56, 71);
 }
 
@@ -19,17 +19,20 @@ body{
 
 }
 
-main{
+header{
     display: flex;
-    padding: 1.5rem;
+   
     margin-bottom: 2rem;
-    justify-content: space-around;
+    
     flex-direction: row;
     background-image: url(https://cdn-icons-png.flaticon.com/512/106/106798.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     height: 20rem;
+    position: absolute;
+    left: calc(50% - 10rem);
+    right: calc(50% - 10rem);
 
    
 }
@@ -70,12 +73,14 @@ nav{
     margin-top: 40px;
     z-index: 3;
     padding: 2rem;
+   
 
    
 }
 
 ul.ul-nav > li  {
     list-style: none;
+    color: var(--color-fondo);
 }
 
 input#menu-hamburguesa:checked ~ ul{
@@ -103,7 +108,7 @@ h4{
     margin-top: 1.5rem;
 }
 
-main > .contenedor-main.uno{
+header > .contenedor-main.uno{
     width: 8rem;
     
 
@@ -114,28 +119,84 @@ main > .contenedor-main.uno{
     width:8rem;
     height: 8rem;
 
-    background-color: var(--circulo-colorfond);
+    background-color: var(--color-menu);
     border-radius: 50%;
     z-index: -1;
-    position: relative               ;
-}                         cc                                                 
+    position: relative;
+}                                                                       
 
-h3{
-    order: 3;
-}
 
-div.iconmain{
-    display: flex;
-    flex-direction: row;
-}
-
-div.iconmain > div{
+div.exp-icon > div{
 background-color: white;
 border-radius: 50%;
 height:2.3rem;
 width: 2.3rem;
-margin-right: .7rem;
 display: flex;
 align-items: center;
 justify-content: center;
-margin-top: 0.5rem;
+margin-right: 1rem;
+
+}
+
+
+.exp-icon{
+    display: flex;
+}
+
+#icon-lin {
+
+    position:relative;
+    bottom: -20px;
+    
+}
+
+#icon-inst {
+
+    position:relative;
+    bottom: -20px;
+
+    
+}
+
+#icon-twi {
+
+    position:relative;
+    bottom: -20px;
+    margin-right: 0;
+    
+}
+
+
+.experiencia{
+ 
+
+   
+    display: block;
+    position: relative;
+    left:120px;
+    
+    
+   
+    
+}
+
+.iconmain{
+    position: relative;
+    display:flex;
+   
+    
+
+}
+
+
+h3{
+    position: relative;
+    color: var(--verde-titulo);
+    display: block;
+}
+
+#quiensoy{
+    margin-top: 23rem;
+}
+
+
