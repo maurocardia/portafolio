@@ -7,25 +7,22 @@
 }
 
 :root{
-    --color-fondo: #242635;
+    --color-fondo: #13131e;
     --color-menu: #d1ceca;
     --verde-titulo: #34B0BE ;
-    --circulo-colorfond:rgb(56, 56, 71);
+    --circulo-colorfond:#242635;
 }
 
 body{
     padding: 1.5rem;
     background-color: var(--color-fondo);
-
 }
 
-header{
-    display: flex;
-   
+main{
+    display: block;
     margin-bottom: 2rem;
-    
     flex-direction: row;
-    background-image: url(https://cdn-icons-png.flaticon.com/512/106/106798.png);
+    background-image: url(../íconos/lavado-en-seco.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -33,32 +30,27 @@ header{
     position: absolute;
     left: calc(50% - 10rem);
     right: calc(50% - 10rem);
-
-   
+    
 }
 
 label > img{
-   
-   
    filter:brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(3142%) hue-rotate(243deg) brightness(103%) contrast(110%);
 }
 
 input#menu-hamburguesa{
-    display: none;
-    
+    display: none;  
 }
 
 nav{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    height: 40px;
-    
+    height: 40px;   
 }
 .menuh{
-    
     position: absolute;   
     right: 0;
+    margin-right: 2rem;
 }
 
 .ul-nav{
@@ -72,10 +64,7 @@ nav{
     background-color: var(--color-menu);
     margin-top: 40px;
     z-index: 3;
-    padding: 2rem;
-   
-
-   
+    padding: 2rem; 
 }
 
 ul.ul-nav > li  {
@@ -84,10 +73,14 @@ ul.ul-nav > li  {
 }
 
 input#menu-hamburguesa:checked ~ ul{
-    
-    display: flex;
-    
+    display: flex;   
 }
+
+.contenedor-main{
+    position: relative;
+    left: -30px;
+}
+
 
 h2{
     position: relative;
@@ -105,25 +98,13 @@ h1{
 }
 h4{
     display: block;
-    margin-top: 1.5rem;
+    margin-top: 0.8rem;
 }
 
-header > .contenedor-main.uno{
+main > .contenedor-main.uno{
     width: 8rem;
-    
-
+   
 }
-
-
-.contenedor-maindos{
-    width:8rem;
-    height: 8rem;
-
-    background-color: var(--color-menu);
-    border-radius: 50%;
-    z-index: -1;
-    position: relative;
-}                                                                       
 
 
 div.exp-icon > div{
@@ -144,48 +125,35 @@ margin-right: 1rem;
 }
 
 #icon-lin {
-
     position:relative;
-    bottom: -20px;
-    
+    bottom: -20px;  
 }
 
 #icon-inst {
-
     position:relative;
-    bottom: -20px;
-
-    
+    bottom: -20px;  
 }
 
 #icon-twi {
-
     position:relative;
     bottom: -20px;
-    margin-right: 0;
-    
+    margin-right: 0; 
 }
 
 
 .experiencia{
- 
-
-   
     display: block;
-    position: relative;
-    left:120px;
+    position: absolute;
+    right: -80px;
+    padding-top: 1rem;
+    top: 0%;
     
-    
-   
     
 }
 
 .iconmain{
     position: relative;
     display:flex;
-   
-    
-
 }
 
 
@@ -195,8 +163,155 @@ h3{
     display: block;
 }
 
-#quiensoy{
-    margin-top: 23rem;
+
+
+
+
+main > img{
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    filter:brightness(0) saturate(100%) invert(11%) sepia(9%) saturate(2329%) hue-rotate(195deg) brightness(96%) contrast(88%)
 }
 
 
+
+
+.iconhead{
+    position: absolute;
+    width: 25rem;
+    height: 4rem;
+    background-color: var(--circulo-colorfond);
+    top: 370px;
+    display: grid;
+    grid-template-columns:[x0] 1.5fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1.5fr ;
+    right: calc(50% - 12.5rem) ;
+    border-radius: 0.8rem;
+    align-items: center;
+    
+
+
+   
+}
+
+div.iconhead > div{
+    height: 2.5rem;
+    width: 4.5rem;
+    background-color:var(--color-menu);
+    margin: auto 1rem; 
+    border-radius: 0.5rem;
+
+    
+    
+ 
+}
+
+.icono{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.icono > img{
+   width: 2.4rem  ;  
+}
+
+.aca > img{
+    width: 2.5rem;
+    height: 2.5rem;
+    filter:  brightness(0) saturate(100%) invert(11%) sepia(8%) saturate(2524%) hue-rotate(195deg) brightness(94%) contrast(88%);
+
+}
+
+
+
+.go{
+   
+    grid-column: x1;
+}
+
+
+#quiensoy{
+    margin-top: 23rem;
+   
+}
+
+.tituloacerca{
+    color: var(--verde-titulo);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 1rem    ;
+    padding: 2rem; 
+    font-size: xx-large;
+}
+
+#quiensoy{
+    padding:1rem 2.8rem;
+}
+
+
+
+.servicios-area{    
+   
+    max-width: 599px;
+    display: flex;
+    
+    overflow: auto;
+}
+section > div.cardsection{
+    width: 8rem ;
+    height: 24rem;
+    text-align: center;
+    background-color: #ffffff;
+    min-width: 22rem;
+    margin-right: 1rem;
+    border-radius: 0.3rem;
+    background-image: url(../Vectores/Ellipse\ 14.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.contenedor-title{
+    margin:auto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.titulo-section{
+    color: var(--verde-titulo);
+    font-size: xx-large;
+
+}
+
+div.cardsection > img{
+    position: relative;
+    bottom: -100px;
+    left: 7px;
+    
+}
+
+.textcard{
+    color: var(--color-menu);
+    position: relative;
+    top: 120px;
+    
+}
+
+.textcard > span{
+    color: black;
+    font-size: xx-large;
+    margin-bottom: 2rem ;
+    
+}
+
+
+.mis-habilidades{
+    margin-top: 2rem;
+}
+
+.progress{
+    border-style: double;
+
+}
