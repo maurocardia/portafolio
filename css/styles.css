@@ -7,7 +7,7 @@
 }
 
 :root{
-    --color-fondo: #13131e;
+    --color-fondo: #1a1a29;
     --color-menu: #d1ceca;
     --verde-titulo: #34B0BE ;
     --circulo-colorfond:#242635;
@@ -254,8 +254,6 @@ div.iconhead > div{
 
 
 .servicios-area{    
-   
-    max-width: 599px;
     display: flex;
     
     overflow: auto;
@@ -271,6 +269,7 @@ section > div.cardsection{
     background-image: url(../Vectores/Ellipse\ 14.svg);
     background-repeat: no-repeat;
     background-size: contain;
+    margin-bottom:2rem ;
 }
 
 .contenedor-title{
@@ -306,12 +305,137 @@ div.cardsection > img{
     
 }
 
-
 .mis-habilidades{
     margin-top: 2rem;
 }
 
-.progress{
-    border-style: double;
+.title-habilidades{
+    font-size: xx-large;
+    color: var(--verde-titulo);
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 
 }
+
+.title-habilidades ~ p{
+    font-size:larger;
+}
+
+progress[value] {
+    display: block;
+    height: 1.2rem;
+    width: 100%;
+    appearance: none;
+  -webkit-appearance: none;
+  margin-bottom: 2.5rem;
+
+  
+
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 1rem;
+  }
+
+  progress[value]::-webkit-progress-value {
+    background-color: var(--verde-titulo);
+    border-radius: 1rem;
+
+  }
+
+  .portafoliotittle{
+    font-size: x-large;
+    color: var(--verde-titulo);
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .container-portafolio{
+    display: flex;
+    overflow: auto;
+  }
+
+  .container-portafolio > img{
+      width: 331px;
+      height: 219px;
+      margin-right: 2rem;
+  }
+
+  .tittle-contacto{
+      text-align: center;
+      color: var(--verde-titulo);
+      font-size: xx-large;
+      margin-top: 4rem;
+  }
+
+  .containercontac{
+      display: flex;
+      height: 35rem;
+      padding-top: 4rem;
+      position: relative;
+      padding-right: 4rem;
+      
+  }
+
+  .containercontac > div{
+      height: 220px;
+      width: 300px;
+      background-color: white;
+      margin-left: 1rem;
+      text-align: center;
+      background-image: url(../Vectores/Ellipse\ 14.svg);
+      background-repeat: no-repeat;
+      background-size:contain;
+      border-radius: 0.5rem;
+      min-width: 300px;
+     
+      position: relative;
+     
+    
+     
+    
+      
+  }
+
+  .icontel > img{
+      width: 80px;
+      height: 80px;
+      position: relative;
+      top: 65px ;
+      
+      
+  }
+
+  #iconemail > img{
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      top: 65px ;
+      left: 5px;
+     
+
+  }
+
+  .cardcontac ~ p{
+      color: black;
+      font-size:x-large;
+      position: relative;
+      top: 55px ;
+     
+  }
+
+  .titlecontact > span{
+      color: var(--color-menu);
+      font-size: large;
+  }
+
+  #iconemail{
+      align-self: flex-end;
+      position: absolute    ;
+      right: 0;
+      margin-right: 1rem;
+  }
+
+
