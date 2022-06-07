@@ -470,7 +470,7 @@ progress[value]::-webkit-progress-bar {
 
   .titlecontact > span{
       color: var(--color-menu);
-      font-size: large;
+      font-size: medium;
   }
 
   #iconemail{
