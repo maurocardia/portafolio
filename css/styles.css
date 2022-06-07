@@ -437,7 +437,7 @@ progress[value]::-webkit-progress-bar {
       border-radius: 0.5rem;
      margin-left: 1rem;
         position: relative;
-        min-width: 180px;
+        min-width: 170px;
       
   }
 
