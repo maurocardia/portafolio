@@ -416,9 +416,10 @@ progress[value]::-webkit-progress-bar {
       display: flex;
       height: 34rem;
       padding-top: 3rem;
-      position: relative;
+     
      justify-content: center;
-      flex-direction: row;
+     
+      padding: 1rem;
       
       
       
@@ -434,14 +435,9 @@ progress[value]::-webkit-progress-bar {
       background-repeat: no-repeat;
       background-size:contain;
       border-radius: 0.5rem;
-      min-width: 220;
-      margin-left: 1rem;
-      position: relative;
-      min-width: 220px;
-     
-    
-     
-    
+     margin-left: 1rem;
+        position: relative;
+        min-width: 180px;
       
   }
 
@@ -479,10 +475,10 @@ progress[value]::-webkit-progress-bar {
 
   #iconemail{
     align-self: flex-end;
-      
-      right: 0;
-      
   }
+
+ 
+  
 
   footer > div{
       background-color: var(--circulo-colorfond);
