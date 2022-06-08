@@ -93,6 +93,7 @@ h2{
     position: relative;
     left: 0;
    display: block;
+   font-size: small;
 }
 
 h1{
@@ -106,6 +107,7 @@ h1{
 h4{
     display: block;
     margin-top: 0.8rem;
+    font-size: small;
 }
 
 main > .contenedor-main.uno{
@@ -117,8 +119,8 @@ main > .contenedor-main.uno{
 div.exp-icon > div{
 background-color: white;
 border-radius: 50%;
-height:2.3rem;
-width: 2.3rem;
+height:1.9rem;
+width: 1.9rem;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -129,6 +131,7 @@ margin-right: 0.7rem;
 
 .exp-icon{
     display: flex;
+    position: absolute;
 }
 
 #icon-lin {
@@ -151,7 +154,7 @@ margin-right: 0.7rem;
 .experiencia{
     display: block;
     position: absolute;
-    left:190px;
+    left:200px;
     padding-top: 1rem;
     top: 0%;
     
@@ -168,6 +171,7 @@ h3{
     position: relative;
     color: var(--verde-titulo);
     display: block;
+    font-size: medium;
 }
 
 
@@ -176,27 +180,28 @@ h3{
 
 main > img{
     position: absolute;
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
     filter:brightness(0) saturate(100%) invert(11%) sepia(9%) saturate(2329%) hue-rotate(195deg) brightness(96%) contrast(88%);
     left: 0;
+    left: calc(50% - 7.5rem) ;
 }
 
 
 
 
 .iconhead{
-    position: absolute;
-    width: 23rem;
+    position: relative;
+    width: 15rem;
     height: 4rem;
     background-color: var(--circulo-colorfond);
-    top: 355px;
-    display: grid;
-    grid-template-columns:[x0] 1.5fr [x1] 1fr [x2] 1fr [x3] 1fr [x4] 1.5fr ;
-    right: calc(50% - 12.5rem) ;
+    top: 240px;
+    display: flex;
+
     border-radius: 0.8rem;
-    align-items: center;
-    left:  calc( 50% - 11.5rem);
+    justify-content: center;
+    left: calc(50% - 7.5rem);
+    
     
     
 
@@ -437,7 +442,7 @@ progress[value]::-webkit-progress-bar {
       border-radius: 0.5rem;
      margin-left: 1rem;
         position: relative;
-        min-width: 170px;
+        min-width: 120px;
       
   }
 
