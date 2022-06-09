@@ -3,7 +3,8 @@
     padding: 0%;
     box-sizing: border-box;
     color: white;
-
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Red+Hat+Display:wght@300&display=swap');
+    font-family: 'Montserrat', sans-serif;
 }
 
 :root{
@@ -80,15 +81,16 @@ input#menu-hamburguesa:checked ~ ul{
 .contenedor-main{
     position: relative;
     left: 18px;
+    top: 27px;
     
 }
 
 
-h2{
-    position: relative;
-    left: 0;
-   display: block;
-   font-size: small;
+    h2{
+        position: relative;
+        left: 0;
+    display: block;
+    font-size: 20px;
 }
 
 h1{
@@ -97,6 +99,7 @@ h1{
     border-bottom-style: solid;
     display:inline;
     color: var(--verde-titulo);
+ 
 
 }
 h4{
@@ -483,6 +486,68 @@ progress[value]::-webkit-progress-bar {
 
 
   .tittlefooter{
-      color:var(--verde-titulo)07.47410.;
+      color:var(--verde-titulo);
+      font-size: 20px;
   }
 
+
+  @media screen and  (min-width: 400px){
+    .contenedor-main{
+        left: 0;
+    }
+    .experiencia{
+        left:210px;
+    }
+
+
+  }
+
+
+  @media screen and  (min-width: 600px){
+      .h2{
+          font-size: 30px;
+      }
+
+
+  }
+
+
+
+  @media screen and  (min-width: 800px){
+    .servicios-area{    
+        display: flex;
+        
+        overflow: none;
+        margin-left: 1rem;
+        justify-content: center;
+    }
+  }
+
+
+  @media screen and  (min-width: 988px){
+
+    .container-portafolio{
+        display: flex;
+        overflow:none;
+        position: relative;
+        justify-content: center;
+    
+      }
+
+  }
+
+  .texto_responsive:before{
+    content: attr(data-desktoptext);
+  }
+  
+  @media (max-width:900px) {
+      .texto_responsive:before {
+          content: attr(data-tablettext);
+      }
+  }
+  
+  @media (max-width:400px){
+      .texto_responsive:before {
+          content: attr(data-phonetext);
+      }
+  }
