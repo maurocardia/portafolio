@@ -21,6 +21,8 @@ body{
 header{
     width: 100%;
     height: 18rem;
+    display:flex;
+   
 }
 
 main{
@@ -48,11 +50,13 @@ nav{
     justify-content: center;
     flex-direction: row;
     height: 40px;   
+    
 }
 .menuh{
     position: absolute;   
     right: 0;
-    margin-right: 2rem;
+    padding-right: 2rem;
+    
 }
 
 .ul-nav{
@@ -81,7 +85,7 @@ input#menu-hamburguesa:checked ~ ul{
 .contenedor-main{
     position: relative;
     left: 18px;
-    top: 27px;
+    top: 7px;
     
 }
 
@@ -90,7 +94,7 @@ input#menu-hamburguesa:checked ~ ul{
         position: relative;
         left: 0;
     display: block;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 h1{
@@ -99,6 +103,7 @@ h1{
     border-bottom-style: solid;
     display:inline;
     color: var(--verde-titulo);
+    font-size: 25px;
  
 
 }
@@ -114,18 +119,22 @@ main > .contenedor-main.uno{
 }
 
 
-div.exp-icon > div{
-background-color: white;
-border-radius: 50%;
-height:1.9rem;
-width: 1.9rem;
-display: flex;
-align-items: center;
-justify-content: center;
-margin-right: 0.7rem;
+    div.exp-icon > div{
+    background-color: white;
+    border-radius: 50%;
+    height: 1.2rem;
+    width: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.7rem;
 
 }
 
+.iconn > img{
+    height: 1rem;
+    width: 1rem;
+}
 
 .exp-icon{
     display: flex;
@@ -152,9 +161,9 @@ margin-right: 0.7rem;
 .experiencia{
     display: block;
     position: absolute;
-    left:180px;
+    left:200px;
     padding-top: 1rem;
-    top: 0%;
+    top: -16px;
     
     
 }
@@ -183,7 +192,7 @@ main > img{
     filter:brightness(0) saturate(100%) invert(11%) sepia(9%) saturate(2329%) hue-rotate(195deg) brightness(96%) contrast(88%);
     left: 0;
     left: calc(50% - 7.5rem) ;
-    margin-top: 2rem;
+    
 }
 
 
@@ -194,7 +203,7 @@ main > img{
     width: 15rem;
     height: 4rem;
     background-color: var(--circulo-colorfond);
-    top: 270px;
+    top: 230px;
     display: flex;
     left: calc(50% - 7.5rem);
     border-radius: 0.8rem;
@@ -401,7 +410,8 @@ progress[value]::-webkit-progress-bar {
       text-align: center;
       color: var(--verde-titulo);
       font-size: xx-large;
-      margin-top: 4rem;
+      margin-top: 6rem;
+      margin-bottom: 4rem;
   }
 
   .containercontac{
@@ -490,6 +500,26 @@ progress[value]::-webkit-progress-bar {
       font-size: 20px;
   }
 
+  @media screen and  (max-width: 317px){
+      p{
+          font-size: 15px;
+      }
+      .tituloacerca{
+          font-size: 20px;
+      }
+      .titulo-section{
+          font-size: 20px;
+      }
+      .title-habilidades {
+        font-size: 20px;
+      } 
+      .portafoliotittle{
+        font-size: 20px;
+      } 
+      .tittle-contacto{
+        font-size: 20px;
+      }
+  }
 
   @media screen and  (min-width: 400px){
     .contenedor-main{
@@ -508,8 +538,61 @@ progress[value]::-webkit-progress-bar {
           font-size: 30px;
       }
 
+      main > img{
+       
+        width: 20rem;
+        height: 20rem;
+         left: calc(50% - 10rem) ;
+        }
+        
+     .iconhead{
 
-  }
+           width: 20rem ;
+            top: 300px;
+            left: calc(50% - 10rem);
+        }
+   
+        header{
+            margin-bottom: 8rem;
+        }
+      
+        .experiencia{
+            left:230px;
+            top:  7px;
+           }
+
+           .contenedor-main{
+            position: relative;
+            left: -20px;
+            top: 27px;
+
+           }
+
+           h2{
+               font-size:x-large;
+           }
+           h1{
+               font-size: xx-large;
+           }
+           h3{
+               font-size:large;
+               margin-bottom: 0.5rem;
+           }
+           div.exp-icon > div{
+            height:2.5rem;
+            width: 2.5rem;
+         
+            }
+
+            #numero{
+                font-size: 15px;
+            }
+
+         
+        
+}
+
+        
 
 
 
@@ -524,7 +607,32 @@ progress[value]::-webkit-progress-bar {
   }
 
 
-  @media screen and  (min-width: 988px){
+  @media screen and  (min-width: 992px){
+
+    .menuh{
+        display: none;
+    }
+
+    nav{
+        height: 4rem;/*
+        border-bottom: 1px;
+        border-color:var(--color-menu);
+        border-bottom-style: solid;*/
+        margin-bottom: 3rem; 
+    }
+
+    .ul-nav{
+        display: flex;
+        height: 4rem;
+        margin-top: 0%;
+        flex-direction: row;
+        justify-content: end;
+        background-color: transparent;
+    }
+
+    ul.ul-nav > li{
+        color: white;
+    }
 
     .container-portafolio{
         display: flex;
@@ -533,6 +641,86 @@ progress[value]::-webkit-progress-bar {
         justify-content: center;
     
       }
+      
+      main > img{
+       
+        width: 30rem;
+        height: 30rem;
+         left: calc(50% - 15rem) ;
+        }
+        
+     .iconhead{
+
+           width: 40rem ;
+           height: 7rem;
+            top: 460px;
+            left: calc(50% - 20rem);
+        }
+   
+        header{
+            margin-bottom: 8rem;
+        }
+      
+        .experiencia{
+            left: 280px;px;
+            top: 20px;
+           }
+
+           .iconn > img{
+            height: 1.9rem;
+            width: 1.9rem;
+        }
+
+           .contenedor-main{
+            position: relative;
+            left: -190px;
+            top: 27px;
+
+           }
+           .icono > img{
+            width: 3.5rem  ;  
+         }
+         
+         .aca > img{
+             width: 3.5rem;
+             height: 3.5rem;
+             filter:  brightness(0) saturate(100%) invert(11%) sepia(8%) saturate(2524%) hue-rotate(195deg) brightness(94%) contrast(88%);
+         
+         }
+         div.iconhead > div{
+            height: 5rem;
+            width: 8rem;
+         }
+         
+
+      
+            h2{
+               font-size:xx-large;
+           }
+           h1{
+               font-size:70px;
+           }
+           h3{
+               font-size:xx-large;
+           }
+           h4{
+               font-size: larger;
+           }
+           div.exp-icon > div{
+            height:2.5rem;
+            width: 2.5rem;
+         
+            }
+            header{
+                margin-bottom: 17rem;
+            }
+
+            #quiensoy{
+                font-size: 22px;
+            }
+            .portafoliotittle{
+                font-size: xx-large;
+            }
 
   }
 
@@ -551,3 +739,13 @@ progress[value]::-webkit-progress-bar {
           content: attr(data-phonetext);
       }
   }
+
+  @media (min-width:1084px){
+    progress[value] {
+        max-width: 1015.2px;
+    }
+    #texquiensoy{
+        max-width:1015.2px ;
+    }
+    
+}
