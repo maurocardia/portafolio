@@ -8,8 +8,16 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <div class="divBodyImg">
+
+    </div>
 
     <nav >
+
+        <a href="/Currículum Mauricio carvajal diaz.pdf" download="CV Mauricio Carvajal Diaz (Full-Stack Developer)"><button class="buttonCv"> Descargar CV  <img src="./Logos- Imagenes/bxs-download.svg" alt=""></button></a>
+
+
+        <a name="goHome"></a>
         <input type="checkbox" id="menu-hamburguesa">
         <label for="menu-hamburguesa">
 
@@ -17,11 +25,11 @@
         </label>
 
         <ul class="ul-nav">
-            <li>Home</li>
-            <li>Servicios</li>
-            <li>Acerca de mis habilidades</li>
-            <li>Mi portafolio</li>
-            <li>Contacto</li>
+           <a href="#goHome"> <li>Home</li> </a> 
+           <a href="#goServicios"><li>Servicios</li></a> 
+            <a href="#goAbout"><li>Acerca de mis habilidades</li></a>
+            <a href="#miPortafolio"><li>Mi portafolio</li></a>
+            <a href="#goContacto"><li>Contacto</li></a>
         </ul>
     </nav>
 
@@ -34,8 +42,8 @@
                 <div class="contenedor-main">
                     <h2>Soy</h2>
                     <h1>Mauricio</h1>
-                    <h4>Marketing y <br>
-                    Diseñador UX/UI</h3>
+                    <h4>Desarrollador<br>
+                    Web Full-Stack </h3>
                 </div>
            
     
@@ -73,7 +81,7 @@
        
     
     </header>
-
+    <a name="goAbout"></a>
     <section class="a-cerca">
         <article id="quiensoy">
             
@@ -82,12 +90,13 @@
                 Hola, soy desarrollador web full stack, trabajo en equipo y me gusta siempre brindar el mejor trabajo para mis clientes.
                 <br>
                 <br>
-                Soy dedicado a mi trabajo, un apasionado que logra resultados imposibles, he trabajado en Globant
+                Soy dedicado a mi trabajo, un apasionado que logra resultados imposibles, desde muy pequeño el desarrollo ha sido mi sueño
             </p>
         </article>
     
     </section>
 
+    <a name="goServicios"></a>
     <section class="servicios">
         <div class="contenedor-title"><p class="titulo-section">Servicios</p></div>
         
@@ -107,7 +116,8 @@
     
             <div class="cardsection marketing">
                 <img src="./íconos/majesticons_speakerphone-line.svg" alt="">
-                <p class="textcard"><span>Javascript</span>
+                <p class="textcard"><span>Javascript <br> React
+                </span>
                     <br>
                     <br> Desde diseño hasta
                     <br>
@@ -136,20 +146,25 @@
         <progress id="mk" max="100"  value="90"></progress>
         <p id="titulobarrud">HTML: 80%</p>
         <progress id="ud" max="100" value="80"></progress>
-        <p id="titulobarrur">CSS    70%</p>
-        <progress id="ur" max="100" value="70"></progress>
+        <p id="titulobarrur">CSS    85%</p>
+        <progress id="ur" max="100" value="85"></progress>
+        <p id="titulobarrur">React    90%</p>
+        <progress id="ur" max="100" value="90"></progress>
         
     </section>
-
+    <a name="miPortafolio"></a>
     <section class="portafolio">
         <p class="portafoliotittle">Mi portafolio</p>
         <div class="container-portafolio">
-            <img src="./Logos- Imagenes/order sunnary.png" alt="">
-            <img src="./Logos- Imagenes/thank youcard.png" alt="">
-            <img src="./Logos- Imagenes/image 4.jpg" alt="" id="imagenfinal">
+            <a href="https://tangerine-sherbet-aa89b2.netlify.app" class="container-portafolio"><img src="./Logos- Imagenes/38ed03da-5fb1-48b5-afcd-f0784b5cca70.gif" alt=""></a>
+
+           <a href="https://singular-cucurucho-9ca2d5.netlify.app" class="container-portafolio"><img src="./Logos- Imagenes/screen-recording-_1_.gif" alt=""></a>
+
+            <a href="https://thriving-horse-d29ecb.netlify.app/" class="container-portafolio"><img src="./Logos- Imagenes/screen-recording-_2_.gif" alt="" id="imagenfinal"></a>
         </div>
     </section>
 
+    <a name="goContacto"></a>
     <aside class="contacto">
         <p class="tittle-contacto">Contacto</p>
         <div class="containercontac">
