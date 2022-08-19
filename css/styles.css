@@ -462,6 +462,18 @@ progress[value]::-webkit-progress-bar {
     
   }
 
+  .titleProject{
+    display: flex;
+    margin:0 10vw ;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+   
+  }
+
+  .titleProject > h5{
+    color: var(--verde-titulo);
+}
+
   
 
   .container-portafolio > img{
