@@ -48,7 +48,7 @@ nav{
     position: fixed;
     z-index: 25;
     left: 0;
-    bottom:94vh;
+    margin-top: 1rem;
     background-color: transparent;
     border-style: none;
     padding-left: 1rem;
@@ -660,10 +660,12 @@ progress[value]::-webkit-progress-bar {
         font-size: 20px;
       }
   }
-  @media screen and  (max-width: 360px){
+  @media screen and  (max-width: 400px){
     .buttonCv{
-        bottom: 94vh;
+        margin-top: 0.3rem;
+        
     }
+  
   }
 
   @media screen and  (min-width: 400px){
@@ -673,6 +675,13 @@ progress[value]::-webkit-progress-bar {
     .experiencia{
         left:210px;
     }
+    .buttonCv{
+        margin-top: 0.3rem;
+        
+    }
+  
+
+    
    
 
   }
@@ -763,6 +772,11 @@ progress[value]::-webkit-progress-bar {
 
   @media screen and  (min-width: 992px){
 
+    .buttonCv{
+        margin-top: 1rem;
+        
+    }
+  
     .containerMenuh{
         display: none;
     }
@@ -894,7 +908,7 @@ progress[value]::-webkit-progress-bar {
                 top: -310px;
             }
             .buttonCv{
-                bottom: 91vh;
+               
             }
 
 
