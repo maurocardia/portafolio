@@ -660,6 +660,11 @@ progress[value]::-webkit-progress-bar {
         font-size: 20px;
       }
   }
+  @media screen and  (max-width: 360px){
+    .buttonCv{
+        bottom: 94vh;
+    }
+  }
 
   @media screen and  (min-width: 400px){
     .contenedor-main{
@@ -668,7 +673,7 @@ progress[value]::-webkit-progress-bar {
     .experiencia{
         left:210px;
     }
-
+   
 
   }
 
