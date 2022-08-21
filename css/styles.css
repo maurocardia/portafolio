@@ -888,6 +888,9 @@ progress[value]::-webkit-progress-bar {
                 right: calc(50% - 25rem);
                 top: -310px;
             }
+            .buttonCv{
+                bottom: 91vh;
+            }
 
 
   }
@@ -895,6 +898,8 @@ progress[value]::-webkit-progress-bar {
   .texto_responsive:before{
     content: attr(data-desktoptext);
   }
+
+
   
   @media (max-width:900px) {
       .texto_responsive:before {
