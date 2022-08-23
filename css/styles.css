@@ -252,6 +252,14 @@ main > .contenedor-main.uno{
     height: 1.5rem;
     width: 1.5rem;
     padding: 0.2rem;
+    
+}
+.iconn{
+    transition: 200ms;
+}
+
+.iconn:hover{
+    transform: rotate(360deg) scale(1.5) ;
 }
 
 div.exp-icon{
