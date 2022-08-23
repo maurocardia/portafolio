@@ -5,6 +5,8 @@
     color: white;
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Red+Hat+Display:wght@300&display=swap');
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    
 }
 
 :root{
@@ -17,6 +19,7 @@
 body{
    
     background-color: var(--color-fondo);
+    
 }   
 
 .divBodyImg{
@@ -662,7 +665,7 @@ progress[value]::-webkit-progress-bar {
   }
   @media screen and  (max-width: 400px){
     .buttonCv{
-        margin-top: 0.3rem;
+        margin-top: 0.2rem;
         
     }
   
